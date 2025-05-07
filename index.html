@@ -105,7 +105,7 @@
 
                   My current research lies at the intersection of deep learning and 
                 different areas of computer graphics, including <strong>neural/physically 
-                based rendering</strong> and <strong>computational imaging</strong>. 
+                based rendering</strong> and <strong>3d vision</strong>. 
                   More boardly, I am interested in leveraging advanced machine 
                 learning techniques to solve the challenges in building realistic, 
                 efficient, and interactive visual computing systems.
@@ -147,11 +147,11 @@
               <br>
               <!-- <br> -->
               <img style="padding:1%; width:100%; max-width:80%;  display: block; margin-left: auto; margin-right: auto; " alt="profile photo" src="images/personal-cropped.jpg" class="hoverZoomLink">
-              <a href="https://hits.seeyoufarm.com" target="_blank">
+              <!-- <a href="https://hits.seeyoufarm.com" target="_blank">
                 <img 
                   src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fbingxuan-li&count_bg=%23ED7E21&title_bg=%23555555&icon=pluscodes.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false"
                   style="display: block; margin-left: auto; margin-right: auto; width: 42%;"/>
-              </a>
+              </a> -->
             </td>
             <!-- <td style="padding:5%;width:37%;max-width:37%"> 
               <img style="width:100%;max-width:100%" alt="profile photo" src="images/face3.jpg" class="hoverZoomLink">
@@ -171,12 +171,69 @@
     <br>
 
     <tr>
-    <!--  <td style="padding:20px;width:30%;vertical-align:middle">
-          <img src='images/water.png' width="190">
-      </td>
-      <td style="padding:20px;width:70%;vertical-align:middle">
-        <span style="color: grey;">
-          <papertitle>Research on Physically Based Rendering</papertitle> -->
+ 
+  <!-- Image-GS -->
+  <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+    <td style="padding:15px;width:30%;vertical-align:middle">
+      <div class="one">
+        <!-- <div class="two" id='malle_image'> -->
+          <!-- <br> -->
+          <!-- <img src='images/image-gs.jpg' width="200"></div> -->
+        <!-- <br> -->
+        <img src='images/image-gs.jpg' width="190">
+      </div>
+      <script type="text/javascript">
+        function malle_start() {
+          document.getElementById('malle_image').style.opacity = "1";
+        }
+        function malle_stop() {
+          document.getElementById('malle_image').style.opacity = "0";
+        }
+        malle_stop()
+      </script>
+    </td>
+    <td style="padding:20px;width:70%;vertical-align:middle">
+      <a href="https://arxiv.org/abs/2407.01866/" target="_blank">
+        <papertitle>
+          Image-GS: Content-Adaptive Image Representation via 2D Gaussians
+        </papertitle>
+      </a>
+      <br>
+      <a class="a2" href="https://yunxiangzhang.github.io/" target="_blank">Yunxiang Zhang*</a>,
+      <strong>Bingxuan Li*</a></strong>,
+      <a class="a2" href="https://www.alexku.me/" target="_blank">Alexandr Kuznetsov</a>,
+      <a class="a2" href="https://www.akshayjindal.com/" target="_blank">Akshay Jindal</a>,
+      <a class="a2" href="https://www.sdiolatz.info/" target="_blank">Stavros Diolatzis</a>,
+      <a class="a2" href="https://kenchen10.github.io" target="_blank">Kenneth Chen</a>.
+      <a class="a2" href="https://www.intel.com/content/www/us/en/developer/articles/community/gpu-researchers-anton-sochenov.html" target="_blank">Anton Sochenov</a>,
+      <a class="a2" href="http://kaplanyan.com/" target="_blank">Anton Kaplanyan</a>,
+      <a class="a2" href="https://qisun.me" target="_blank">Qi Sun<span>&#8224;</span></a>
+      <br>
+      <a href="https://arxiv.org/abs/2407.01866/">Paper</a> /
+      <a href="https://github.com/NYU-ICL/image-gs">Code</a>
+      <br>
+      <em><strong>SIGGRAPH 2025</strong></em>
+      <p></p>
+      <p> In this work, we present Image-GS, a content-adaptive neural image representation using anisotropic 2D Gaussians, offering high memory efficiency, fast random access, and flexible fidelity control for real-time graphics and machine perception.</p>
+      <br>
+    </td>
+  </tr>
+  
+          <!-- <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/image-gs.jpg" alt="fast-texture" width="240" height="238">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/abs/2407.01866/"></a>
+              <papertitle>Image-GS: Content-Adaptive Image Representation via 2D Gaussians</papertitle>
+              
+              
+              
+            </td>
+          </tr> -->
+
+
+
 
   <!-- Proxy Tracing -->
   <!-- https://tim-1e.github.io/ProxyTracing/ -->
@@ -408,7 +465,7 @@
         <p style="text-align:center">
           This homepage is designed based on 
             <a href="https://jonbarron.info/">Jon Barron</a>
-          's website and deployed on <a href="https://pages.github.com/">Github Pages</a>. Last updated: Mar. 1, 2025        
+          's website and deployed on <a href="https://pages.github.com/">Github Pages</a>. Last updated: May. 1, 2025        
           <br>
           © 2025 Bingxuan Li
         </p>
