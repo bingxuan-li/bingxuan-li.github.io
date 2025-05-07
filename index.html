@@ -219,18 +219,52 @@
     </td>
   </tr>
   
-          <!-- <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/image-gs.jpg" alt="fast-texture" width="240" height="238">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://arxiv.org/abs/2407.01866/"></a>
-              <papertitle>Image-GS: Content-Adaptive Image Representation via 2D Gaussians</papertitle>
-              
-              
-              
-            </td>
-          </tr> -->
+
+    <!-- Metasurface -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+      <td style="padding:15px;width:30%;vertical-align:middle">
+        <div class="one">
+          <!-- <div class="two" id='malle_image'> -->
+            <!-- <br> -->
+            <!-- <img src='images/image-gs.jpg' width="200"></div> -->
+          <!-- <br> -->
+          <img src='images/nano3d.png' width="230">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2503.15770" target="_blank">
+          <papertitle>
+            Nano-3D: Metasurface-Based Neural Depth Imaging
+          </papertitle>
+        </a>
+        <br>
+        <!-- Bingxuan Li, Jiahao Wu, Yuan Xu, Yunxiang Zhang, Zezheng Zhu, Nanfang Yu, Qi Sun -->
+
+
+        <strong>Bingxuan Li*</a></strong>,
+        Jiahao Wu*, Yuan Xu*, 
+        <a class="a2" href="https://yunxiangzhang.github.io/" target="_blank">Yunxiang Zhang</a>,
+        Zezheng Zhu, 
+        <a class="a2" href="https://www.apam.columbia.edu/faculty/nanfang-yu" target="_blank">Nanfang Yu</a>
+        <a class="a2" href="https://qisun.me" target="_blank">Qi Sun<span>&#8224;</span></a>
+        <br>
+        <a href="https://arxiv.org/abs/2503.15770">Paper</a>
+        <br>
+        <em><strong>To be presented as a demo at SIGGRAPH 2025 Emerging Technologies.</strong></em>
+        <p></p>
+        <p>  We built an ultra-compact, metasurface-based neural depth imaging system leveraging nano-optics and deep learning to achieve precise depth estimation from monocular polarized imagery.</p>
+        <br>
+      </td>
+    </tr>
 
 
 
