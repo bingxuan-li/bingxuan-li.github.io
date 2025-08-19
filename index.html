@@ -96,20 +96,19 @@
               <p style="text-align: justify">
               <intro>
                 <p>
-                  Hi! I am a first-year Computer Science Ph.D. student at NYU, 
+                  Hi! I am a second-year Computer Science Ph.D. student at NYU, 
                   advised by 
                   Prof. <a href="https://engineering.nyu.edu/faculty/qi-sun" target="_blank">Qi Sun</a> 
                   in the 
                   <a href="https://www.immersivecomputinglab.org/">Immersive Computing Lab</a>. 
                 </p>
-
-                  My current research lies at the intersection of deep learning and 
-                different areas of computer graphics, including <strong>neural/physically 
-                based rendering</strong> and <strong>3d vision</strong>. 
-                  More boardly, I am interested in leveraging advanced machine 
-                learning techniques to solve the challenges in building realistic, 
-                efficient, and interactive visual computing systems.
-
+                <p>
+                  My research interests are at the intersection of deep learning and computer graphics, 
+                  including <strong>3D understanding, reconstruction, and generation</strong>. 
+                  My recent works are centered on <strong>depth prediction</strong>, where I explore combining 
+                  the rich semantic understanding of vision foundation models with physical information 
+                  to achieve accurate metric depth prediction. 
+                </p>
                 <p>
                   Prior to NYU, I received my Bachelor's degree with honors from 
                   <a href="https://cfcs.pku.edu.cn/english/research/turing_program/introduction1/index.htm" target="_blank">
@@ -121,6 +120,9 @@
                  During my undergraduate years, I was honored to be advised by 
                  Prof. <a href="https://lishengpku.github.io/" target="_blank">Sheng Li</a> and 
                  Prof. <a href="https://sites.cs.ucsb.edu/~lingqi/" target="_blank"><d>Lingqi Yan</d></a>. 
+                </p>
+                <p style="font-size: 1.1em; color: red;">
+                  <em>I am actively seeking a research internship for Summer 2026!</em>
                 </p>
                 <!-- Version 2024 -->
                 <!-- I am a first-year in 
@@ -163,36 +165,56 @@
     </tr>
   </tbody></table>
 
-
-  <!-- Research -->
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;line-height:1.5;"><tbody>
+  <!----------------------------------------------------------------------->
+  <!------------------------------ Research ------------------------------->
+  <!----------------------------------------------------------------------->
+  <table style="width:100%;border:0px;border-spacing:0px 35px;border-collapse:separate;margin-right:auto;margin-left:auto;line-height:1.5;"><tbody>
     <br>
     <heading>Research</heading>
     <br>
-
-    <tr>
- 
-  <!-- Image-GS -->
-  <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-    <td style="padding:15px;width:30%;vertical-align:middle">
-      <div class="one">
-        <!-- <div class="two" id='malle_image'> -->
-          <!-- <br> -->
-          <!-- <img src='images/image-gs.jpg' width="200"></div> -->
-        <!-- <br> -->
-        <img src='images/image-gs.jpg' width="190">
-      </div>
-      <script type="text/javascript">
-        function malle_start() {
-          document.getElementById('malle_image').style.opacity = "1";
-        }
-        function malle_stop() {
-          document.getElementById('malle_image').style.opacity = "0";
-        }
-        malle_stop()
-      </script>
+		* denotes equal contributions.
+    
+  <!----------------------------------------------------------------------->
+  <!------------------------------- Nano3d -------------------------------->
+  <!----------------------------------------------------------------------->
+  <tr>
+    <td style="width:42%">
+      <img src='images/nano3d.jpg' width="280" height="220">
     </td>
-    <td style="padding:20px;width:70%;vertical-align:middle">
+    <td style="width:60%;background-color:#ffffff">
+      <a href="https://arxiv.org/abs/2503.15770" target="_blank">
+        <papertitle>
+          Nano-3D: Metasurface-Based Neural Depth Imaging
+        </papertitle>
+      </a>
+      <br>
+      <strong>Bingxuan Li*</strong>,
+      Jiahao Wu*, Yuan Xu*, 
+      <a class="a2" href="https://yunxiangzhang.github.io/" target="_blank">Yunxiang Zhang</a>,
+      Zezheng Zhu, 
+      <a class="a2" href="https://www.apam.columbia.edu/faculty/nanfang-yu" target="_blank">Nanfang Yu</a>,
+      <a class="a2" href="https://qisun.me" target="_blank">Qi Sun<span>&#8224;</span></a>
+      <br>
+      <a href="https://arxiv.org/abs/2503.15770">Paper</a>
+      <br>
+      <em><strong>SIGGRAPH 2025 Emerging Technologies</strong></em>
+      
+      <br>
+      <p>
+        We built a metasurface-based depth camera for accurate monocular metric depth estimation, 
+        combining polarization multiplexing with neural network decoding. The system was demonstrated in real time at SIGGRAPH 2025.
+      </p>
+    </td>
+  </tr>
+  
+  <!----------------------------------------------------------------------->
+  <!------------------------------ Image-GS ------------------------------->
+  <!----------------------------------------------------------------------->
+  <tr>
+    <td style="width:42%;padding:.75%;">
+      <img src='images/image-gs.jpg' width="270" height="260">
+    </td>
+    <td style="width:60%;background-color:#ffffff">
       <a href="https://arxiv.org/abs/2407.01866/" target="_blank">
         <papertitle>
           Image-GS: Content-Adaptive Image Representation via 2D Gaussians
@@ -200,7 +222,7 @@
       </a>
       <br>
       <a class="a2" href="https://yunxiangzhang.github.io/" target="_blank">Yunxiang Zhang*</a>,
-      <strong>Bingxuan Li*</a></strong>,
+      <strong>Bingxuan Li*</strong>,
       <a class="a2" href="https://www.alexku.me/" target="_blank">Alexandr Kuznetsov</a>,
       <a class="a2" href="https://www.akshayjindal.com/" target="_blank">Akshay Jindal</a>,
       <a class="a2" href="https://www.sdiolatz.info/" target="_blank">Stavros Diolatzis</a>,
@@ -210,96 +232,34 @@
       <a class="a2" href="https://qisun.me" target="_blank">Qi Sun<span>&#8224;</span></a>
       <br>
       <a href="https://arxiv.org/abs/2407.01866/">Paper</a> /
+      <a href="https://www.immersivecomputinglab.org/publication/image-gs-content-adaptive-image-representation-via-2d-gaussians/" target="_blank">Project</a> /
       <a href="https://github.com/NYU-ICL/image-gs">Code</a>
       <br>
       <em><strong>SIGGRAPH 2025</strong></em>
-      <p></p>
-      <p> In this work, we present Image-GS, a content-adaptive neural image representation using anisotropic 2D Gaussians, offering high memory efficiency, fast random access, and flexible fidelity control for real-time graphics and machine perception.</p>
-      <br>
+      <br> 
+      <p>
+        We present Image-GS, a content-adaptive neural image representation using anisotropic 2D Gaussians, offering high memory efficiency, fast random access, and flexible fidelity control for real-time graphics.
+      </p>
     </td>
   </tr>
   
-
-    <!-- Metasurface -->
-    <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-      <td style="padding:15px;width:30%;vertical-align:middle">
-        <div class="one">
-          <!-- <div class="two" id='malle_image'> -->
-            <!-- <br> -->
-            <!-- <img src='images/image-gs.jpg' width="200"></div> -->
-          <!-- <br> -->
-          <img src='images/nano3d.png' width="230">
-        </div>
-        <script type="text/javascript">
-          function malle_start() {
-            document.getElementById('malle_image').style.opacity = "1";
-          }
-          function malle_stop() {
-            document.getElementById('malle_image').style.opacity = "0";
-          }
-          malle_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:70%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2503.15770" target="_blank">
-          <papertitle>
-            Nano-3D: Metasurface-Based Neural Depth Imaging
-          </papertitle>
-        </a>
-        <br>
-        <!-- Bingxuan Li, Jiahao Wu, Yuan Xu, Yunxiang Zhang, Zezheng Zhu, Nanfang Yu, Qi Sun -->
-
-
-        <strong>Bingxuan Li*</a></strong>,
-        Jiahao Wu*, Yuan Xu*, 
-        <a class="a2" href="https://yunxiangzhang.github.io/" target="_blank">Yunxiang Zhang</a>,
-        Zezheng Zhu, 
-        <a class="a2" href="https://www.apam.columbia.edu/faculty/nanfang-yu" target="_blank">Nanfang Yu</a>,
-        <a class="a2" href="https://qisun.me" target="_blank">Qi Sun<span>&#8224;</span></a>
-        <br>
-        <a href="https://arxiv.org/abs/2503.15770">Paper</a>
-        <br>
-        <em><strong>To be presented as a demo at SIGGRAPH 2025 Emerging Technologies.</strong></em>
-        <p></p>
-        <p>  We built an ultra-compact, metasurface-based neural depth imaging system leveraging nano-optics and deep learning to achieve precise depth estimation from monocular polarized imagery.</p>
-        <br>
-      </td>
-    </tr>
-
-
-
-
-  <!-- Proxy Tracing -->
-  <!-- https://tim-1e.github.io/ProxyTracing/ -->
-  <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-    <td style="padding:15px;width:30%;vertical-align:middle">
-      <div class="one">
-        <div class="two" id='malle_image'>
-          <!-- <br> -->
-          <img src='images/proxy-tracing.png' width="220"></div>
-        <!-- <br> -->
-        <img src='images/proxy-tracing.png' width="220">
-      </div>
-      <script type="text/javascript">
-        function malle_start() {
-          document.getElementById('malle_image').style.opacity = "1";
-        }
-        function malle_stop() {
-          document.getElementById('malle_image').style.opacity = "0";
-        }
-        malle_stop()
-      </script>
+  <!----------------------------------------------------------------------->
+  <!--------------------------- Proxy-Tracing ----------------------------->
+  <!--------------- https://tim-1e.github.io/ProxyTracing/ ---------------->
+  <!----------------------------------------------------------------------->
+  <tr>
+    <td style="width:42%">
+      <img src='images/proxy-tracing.png' width="280" height="200">
     </td>
-    <td style="padding:20px;width:70%;vertical-align:middle">
+    <td style="width:60%;background-color:#ffffff">
       <a href="https://tim-1e.github.io/ProxyTracing/" target="_blank">
         <papertitle>
           Proxy Tracing: Unbiased Reciprocal Estimation for Optimized Sampling in BDPT
         </papertitle>
       </a>
       <br>
-
       Fujia Su*,
-      <a:focus><strong>Bingxuan Li*</strong></a:focus>,
+      <strong>Bingxuan Li*</strong>,
       Qingyang Yin,
       Yanchen Zhang,
       <a class="a2" href="https://lishengpku.github.io/" target="_blank">Sheng Li<span>&#8224;</span></a>
@@ -310,33 +270,27 @@
       <a href="https://tim-1e.github.io/ProxyTracing/video.mp4" target="_blank">Video</a>
       <br>
       <em><strong>ACM Transactions on Graphics (SIGGRAPH 2024)</strong></em>
-      <p></p>
-      <p> In this work, we propose a novel sampling method to robustly handle challenging specular/glossy paths in bidirectional path tracing (BDPT), ensuring unbiased rendering and significantly improving sampling efficiency.</p>
+      <p> 
+        We propose a novel sampling method to handle challenging specular/glossy paths in bidirectional path tracing (BDPT), significantly improving rendering efficiency while ensuring unbiasedness.
+      </p>
     </td>
   </tr>
   
 
   
-
-  <!-- Project -->
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;line-height:1.5;"><tbody>
+  <!----------------------------------------------------------------------->
+  <!------------------------------ Projects ------------------------------->
+  <!----------------------------------------------------------------------->
+  <table style="width:100%;border:0px;border-spacing:0px 35px;border-collapse:separate;margin-right:auto;margin-left:auto;line-height:1.5;"><tbody>
     <br>
     <heading>Selected Projects</heading>
     <br>
-    <!-- <p>
-      My research interest is broadly in <strong>3D Computer Vision</strong> and <strong>Robotics</strong>, with particular
-    interests in generalizable object perception, understanding and manipulation currently. My research objective
-    is to build an intelligent agent with the robust and generalizable ability to perceive and interact
-    with a complex real-world environment.
-    </p> -->
 
     <tr>
-      <td style="padding:20px;width:30%;vertical-align:middle">
-        <!-- <br>
-        <br> -->
-          <img src='images/water.png' width="190">
+      <td style="width:42%">
+        <img src='images/water.png' width="250">
       </td>
-      <td style="padding:20px;width:70%;vertical-align:middle">
+      <td style="width:60%;vertical-align:middle">
           <a href="https://github.com/bingxuan-li/EasyRender" target="_blank">
             <papertitle>EasyRender&nbsp;</papertitle> <img src="icons/github-icon.png" alt="Github" width="14" height="14">
           </a>
@@ -346,15 +300,14 @@
             support for pbrt-v3 scenes and Disney Principled Materials, 
             and implementations of advanced physically based rendering algorithms.
           </p>
-
       </td>
     </tr>
 
     <tr>
-      <td style="padding:20px;width:30%;vertical-align:middle">
-          <img src='images/ROMA.png' width="190">
+      <td style="width:42%">
+          <img src='images/ROMA.png' width="250">
       </td>
-      <td style="padding:20px;width:70%;vertical-align:middle">
+      <td style="width:50%">
         <a href="https://github.com/Potato256/my-mitsuba" target="_blank">
           <papertitle>ROMA on Mitsuba&nbsp;</papertitle> <img src="icons/github-icon.png" alt="Github" width="14" height="14">
         </a>
@@ -362,87 +315,10 @@
           This project explores the further applications of 
             <a href="https://zheng95z.github.io/publications/roma23">ROMA</a>
           in rendering, implemented on Mitsuba 0.6. 
-          We primaryly focused on enhancing the performance of ray tracing using ROMA, a novel acceleration method.
+          We primarily focused on enhancing the performance of ray tracing using ROMA, a novel acceleration method.
         </p>
       </td>
     </tr>
-
-    <!-- bvh -->
-    <!-- <tr>
-      <td style="padding:20px;width:30%;vertical-align:middle">
-          <img src='images/bollywood.gif' width="190">
-      </td>
-      <td style="padding:20px;width:70%;vertical-align:middle">
-        <a href="https://github.com/Potato256/bvh_loader" target="_blank">
-          <papertitle>BVH Loader</papertitle>
-        </a>
-
-        <p> A simple BVH (Biovision Hierarchy) loader written in Python. BVH is a file format originally developed by Biovision for storing motion capture data. 
-          BVH files are commonly used in computer graphics and animation to store skeletal motion data, making them a valuable asset in various applications.</p>
-      </td>
-    </tr> -->
-
-
-    <!-- <tr>
-      <td style="padding:20px;width:30%;vertical-align:middle">
-          <img src='images/redSun.gif' width="190">
-      </td>
-      <td style="padding:20px;width:70%;vertical-align:middle">
-        <a href="https://github.com/Potato256/ParticleSun" target="_blank">
-          <papertitle>ParticleSun&nbsp;</papertitle> <img src="icons/github-icon.png" alt="Github" width="14" height="14">
-        </a>
-        <p> The project leverages particles to create a visual representation of a sun's corona. It utilizes OpenGL as its backend.
-          There is also a moon follows Newton's Law to simulate a realistic orbit, and it's rendered using the Blinn-Phong shading model.
-        </p>
-      </td>
-    </tr> -->
-
-    
-    <!-- RSA -->
-    <!-- <tr>
-      <td style="padding:20px;width:30%;vertical-align:middle">
-          <img src='images/lock.jpg' width="190">
-      </td>
-      <td style="padding:20px;width:70%;vertical-align:middle">
-        <a href="https://github.com/Potato256/PKU2022_RSA" target="_blank">
-          <papertitle>RSA Hacker</papertitle>
-        </a>
-
-        <p> In this project, we delve into the dark side, aiming to crack RSA keys generated in various vulnerable ways.
-           The implemented algorithms focus on classical techniques to compromise the security of RSA keys.
-           Here is a <a href="pdf/RSA.pdf" target="_blank">project report</a>.</p>
-      </td>
-    </tr> -->
-
-
-    <!-- Landlord -->
-    <!-- <tr>
-      <td style="padding:20px;width:30%;vertical-align:middle">
-          <img src='images/poker.png' width="190">
-      </td>
-      <td style="padding:20px;width:70%;vertical-align:middle">
-        <a href="https://github.com/Potato256/FightTheLandlord2" target="_blank">
-          <papertitle>FightTheLandlord2 AI</papertitle>
-        </a>
-
-        <p> This project is an AI implementation for the card game FightTheLandlord2.
-          FightTheLandlord2 is a complex and strategic card game, and the AI aims to provide a challenging opponent for players on the Botzone platform.</p>
-      </td>
-    </tr> -->
-    
-    <!-- NoGo -->
-    <!-- <tr>
-      <td style="padding:20px;width:30%;vertical-align:middle">
-          <img src='images/nogo2.gif' width="190">
-      </td>
-      <td style="padding:20px;width:70%;vertical-align:middle">
-        <a href="https://github.com/Potato256/NoGo" target="_blank">
-          <papertitle>NoGo&nbsp;</papertitle> <img src="icons/github-icon.png" alt="Github" width="14" height="14">
-        </a>
-
-        <p> This project is a implementation of the game <a href="https://boardgamegeek.com/boardgame/151419/nogo">NoGo</a> written in C. It features challenging AI empowered with minimax and Monte Carlo Tree Search algorithms and minimalistic GUI created with EasyX. Developed when I was a beginner in coding. </p>
-      </td>
-    </tr> -->
 
   <!-- Services -->
 
@@ -468,51 +344,18 @@
     <td style="padding:10px;width:30%;vertical-align:middle">
       <p style="font-size: 15px;">
         I enjoy reading, gaming, photography and other nerdy stuffs outside of work.     
-    
-          <!-- <p style="font-size: 15px;">I love <strong>music</strong>🎼 and <strong>acoustic guitar</strong>🎸. I tried to create <a href="https://www.bilibili.com/video/BV12q4y1H7uJ/" target="_blank"> music </a>in the past. 
-          Now I focus on enhancing my guitar skills. 
-              <li>My favourite popular music is Queen's <strong>Bohemian Rhapsody</strong>.</li>
-              <li>My favourite classical music is <strong>The Piano Concerto No. 2 in C minor, Op. 18</strong> composed by Sergei Rachmaninoff.</li>
-              <li>My favourite acoustic guitar artist is <strong>Satoshi Gogo</strong> and I am practicing his <strong>Distance</strong> and <strong>Bluebird</strong> currently.</li> 
-          <br>
-          <p style="font-size: 15px;">I love games🎮 and digital art🎴, and I recognize myself as a player😎. My favourite 5 games are:  
-              <li><strong>Sekiro: Shadows Die Twice  (full achievements on Steam)</strong></li>
-              <li><strong>The Legend of Zelda: Breath of the Wild</strong></li>
-              <li><strong>Celeste</strong></li>
-              <li><strong>Hollow Knight</strong></li>
-              <li><strong>What Remains of Edith Finch</strong></li>
-          <p style="font-size: 15px;">I also love playing MOBA and FPS/TPS games with my friends, but I am not very good at these games😂.    
-          <br>
-          <br>
-              
-          <p style="font-size: 15px;">I enjoy movies, books, and animes!     
-            <li>My favourite movie: <strong>Whiplash</strong></li>  
-            <li>My favourite book: <strong>Steppenwolf</strong></li>  
-            <li>My favourite anime: <strong>Sound! Euphonium</strong></li>
-          
-          <br>
-          <br>
-          <p style="font-size: 15px;">I achieved the <strong>amateur 3-dan rank</strong> in the game of <a href="https://en.wikipedia.org/wiki/Go_(game)" target="_blank"> Go </a> at my childhood, and I still play it in my free time.              
-          
-          <br>
-          <br>
-          <p style="font-size: 15px;">I enjoy running and swimming. My current running record is 5 kilometers, and I am working for 8 kilometers.
-            I am not a fast runner, but I excel in swimming. I have earned the honor of an <strong>Excellent Swimmer at Peking University</strong>.     
-        -->
-    </td></tr>
+        </td></tr>
   </tbody></table>
   
 
   <!-- Aknowledgements -->
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr>
-      <!-- <br> -->
-      <!-- <br> -->
       <hr>
         <p style="text-align:center">
           This homepage is designed based on 
             <a href="https://jonbarron.info/">Jon Barron</a>
-          's website and deployed on <a href="https://pages.github.com/">Github Pages</a>. Last updated: May. 1, 2025        
+          's website and deployed on <a href="https://pages.github.com/">Github Pages</a>. Last updated: Sept. 1, 2025        
           <br>
           © 2025 Bingxuan Li
         </p>
