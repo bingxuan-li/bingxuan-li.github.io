@@ -66,6 +66,13 @@
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" type="image/png" href="images/icon.png">
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="author" content="Bingxuan Li">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <!-- bib hide -->
@@ -96,7 +103,7 @@
               <p style="text-align: justify">
               <intro>
                 <p>
-                  Hi! I am a second-year Computer Science Ph.D. student at NYU, 
+                  Hi! I am a second-year Computer Science Ph.D. candidate at NYU, 
                   advised by 
                   Prof. <a href="https://engineering.nyu.edu/faculty/qi-sun" target="_blank">Qi Sun</a> 
                   in the 
@@ -122,9 +129,9 @@
                  Prof. <a href="https://lishengpku.github.io/" target="_blank">Sheng Li</a> and 
                  Prof. <a href="https://sites.cs.ucsb.edu/~lingqi/" target="_blank"><d>Lingqi Yan</d></a>. 
                 </p>
-                <p style="font-size: 1.1em; color: red;">
+                <!-- <p style="font-size: 1.1em; color: red;">
                   <em>I am actively seeking a research internship for Summer 2026!</em>
-                </p>
+                </p> -->
 
               </intro>
               <p style="text-align:center">
@@ -156,6 +163,43 @@
     </tr>
   </tbody></table>
 
+
+  <!----------------------------------------------------------------------->
+  <!------------------------------ News ------------------------------->
+  <!----------------------------------------------------------------------->
+  <table style="width:100%;border:0px;border-spacing:0px 35px;border-collapse:separate;margin-right:auto;margin-left:auto;line-height:1.5;"><tbody>
+    <br>
+    <heading>News</heading>
+    <br>
+    <table width="100%" align="center" border="0" cellpadding="10">
+            <tr>
+              <td>
+                <li>
+                  <strong>Nov 2025: </strong> I passed my qualification exam.
+                </li>
+                <br>
+                <li>
+                  <strong>Nov 2025: </strong> Thanks <a href="https://users.cg.tuwien.ac.at/zsolnai/about/">Károly Zsolnai-Fehér</a> for featuring <a href="https://github.com/NYU-ICL/image-gs">Image-GS</a> on <a href="https://www.youtube.com/watch?v=_WjU5d26Cc4"><span style="color: #e0144c;"> <i class="fab fa-youtube"></i> Two Minute Papers</span></a> and <a href="https://www.linkedin.com/in/shubham-anand-91a10b211/">Shubham Anand</a> for creating a thorough and well-explained tutorial on <a href="https://learnopencv.com/image-gs-image-reconstruction-using-2d-gaussians/"><span style="color: #4cc9f0;"> <i class="fa-solid fa-rocket"></i> LearnOpenCV</span></a>!
+                </li>
+                <br>
+                <li>
+                  <strong>Aug 2025: </strong> I presented <a href="https://dl.acm.org/doi/10.1145/3721257.3734027">Nano-3D</a> E-Tech demo at SIGGRAPH 2025 in Vancouver.
+                </li>
+                <br>
+                <li>
+                  <strong>May 2025: </strong> <a href="https://arxiv.org/abs/2407.01866/" target="_blank">Image-GS</a> and <a href="https://dl.acm.org/doi/10.1145/3721257.3734027">Nano-3D</a> were accepted to SIGGRAPH 2025.
+                </li>
+                <br>
+                <li>
+                  <strong>August 2024: </strong> I presented <a href="https://tim-1e.github.io/ProxyTracing/">Proxy Tracing</a> at SIGGRAPH 2025 in Vancouver.
+                </li>
+              </td>
+            </tr>
+          </table>
+          <br>
+
+  
+
   <!----------------------------------------------------------------------->
   <!------------------------------ Research ------------------------------->
   <!----------------------------------------------------------------------->
@@ -166,6 +210,40 @@
 		* denotes equal contributions.
     
   <!----------------------------------------------------------------------->
+  <!------------------------------- Physically Grounded Monocular Depth -------------------------------->
+  <!----------------------------------------------------------------------->
+  <tr>
+    <td style="width:42%; text-align:left; padding:0;">
+      <img src='images/physically_grounded.png' width="320" height="145" style="display:block;margin-left:-15px;">
+    </td>
+    <td style="width:60%;background-color:#ffffff">
+      <a href="https://arxiv.org/abs/2503.15770" target="_blank">
+        <papertitle>
+          Physically Grounded Monocular Depth via Nanophotonic Wavefront Prompting
+        </papertitle>
+      </a>
+      <br>
+      <strong>Bingxuan Li*</strong>,
+      Jiahao Wu*, Yuan Xu*, Zezheng Zhu, 
+      <a class="a2" href="https://yunxiangzhang.github.io/" target="_blank">Yunxiang Zhang</a>,
+      <a class="a2" href="https://kenchen10.github.io/" target="_blank">Kenneth Chen</a>,
+      Yanqi Liang,
+      <a class="a2" href="https://www.apam.columbia.edu/faculty/nanfang-yu" target="_blank">Nanfang Yu<span>&#8224;</span></a>,
+      <a class="a2" href="https://qisun.me" target="_blank">Qi Sun<span>&#8224;</span></a>
+      <br>
+      <a href="https://arxiv.org/abs/2503.15770">Paper</a>
+      <br>
+      <em><strong>ArXiv preprint</strong></em>
+      
+      <br>
+      <p>
+        We introduce a nanophotonic metalens that physically encodes metric depth into a single monocular image and enables depth foundation models to recover accurate scale through lightweight prompting and fine-tuning.
+      </p>
+    </td>
+  </tr>
+
+  
+  <!----------------------------------------------------------------------->
   <!------------------------------- Nano3d -------------------------------->
   <!----------------------------------------------------------------------->
   <tr>
@@ -173,27 +251,27 @@
       <img src='images/nano3d.jpg' width="280" height="220">
     </td>
     <td style="width:60%;background-color:#ffffff">
-      <a href="https://arxiv.org/abs/2503.15770" target="_blank">
+      <a href="https://dl.acm.org/doi/10.1145/3721257.3734027" target="_blank">
         <papertitle>
-          Nano-3D: Metasurface-Based Neural Depth Imaging
+          Nano-Optics for Depth Sensing
         </papertitle>
       </a>
       <br>
+      Yuan Xu*, 
       <strong>Bingxuan Li*</strong>,
-      Jiahao Wu*, Yuan Xu*, 
+      Jiahao Wu*, 
       <a class="a2" href="https://yunxiangzhang.github.io/" target="_blank">Yunxiang Zhang</a>,
       Zezheng Zhu, 
       <a class="a2" href="https://www.apam.columbia.edu/faculty/nanfang-yu" target="_blank">Nanfang Yu</a>,
       <a class="a2" href="https://qisun.me" target="_blank">Qi Sun<span>&#8224;</span></a>
       <br>
-      <a href="https://arxiv.org/abs/2503.15770">Paper</a>
+      <a href="https://dl.acm.org/doi/10.1145/3721257.3734027">Paper</a>
       <br>
       <em><strong>SIGGRAPH 2025 Emerging Technologies</strong></em>
       
       <br>
       <p>
-        We built a metasurface-based depth camera for accurate monocular metric depth estimation, 
-        combining polarization multiplexing with neural network decoding. The system was demonstrated in real time at SIGGRAPH 2025.
+        We built a metasurface-based depth camera and a neural decoder for accurate monocular metric depth estimation. The system was demonstrated at SIGGRAPH 2025.
       </p>
     </td>
   </tr>
@@ -352,7 +430,7 @@
         <p style="text-align:center">
           This homepage is designed based on 
             <a href="https://jonbarron.info/">Jon Barron</a>
-          's website and deployed on <a href="https://pages.github.com/">Github Pages</a>. Last updated: Sept. 1, 2025        
+          's website and deployed on <a href="https://pages.github.com/">Github Pages</a>. Last updated: Jan. 1, 2026        
           <br>
           © 2025 Bingxuan Li
         </p>
